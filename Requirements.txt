@@ -9,3 +9,10 @@ Users and Registration
 
 Layout JS
 * Add dynamic view to show method.
+
+Application
+* Tranfer the project to mobile application.
+
+Final Deploying
+* Upload the project into host.
+* Run the project in a local enviroment.

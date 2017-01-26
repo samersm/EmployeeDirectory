@@ -45,6 +45,10 @@ Rails Commands Cheatsheet
 
 * git reset --hard HEAD (To revert to a previous commit, ignoring any changes)
 
-* heroku domains
+* git commit --amend -m "New commit message" (To edit your latest commit)
+
+* git push -f
+
+* heroku domains (To view all your domains)
 
 * git push -f heroku master
