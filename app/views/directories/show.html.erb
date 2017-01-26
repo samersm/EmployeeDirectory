@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @directory.name %>
+</p>
+
+<p>
+  <strong>Ext:</strong>
+  <%= @directory.ext %>
+</p>
+
+<p>
+  <strong>Dept:</strong>
+  <%= @directory.dept %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @directory.note %>
+</p>
+
+<%= link_to 'Edit', edit_directory_path(@directory) %> |
+<%= link_to 'Back', directories_path %>
