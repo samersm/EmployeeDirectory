@@ -1,0 +1,11 @@
+layout
+* Create pages_and_layout branch.
+* Add DataTables.
+* Add theme and styles.
+
+Users and Registration
+* Add users registration.
+* Specify what users can do.
+
+Layout JS
+* Add dynamic view to show method.
