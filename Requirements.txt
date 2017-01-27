@@ -7,6 +7,9 @@ Users and Registration
 * Add users registration.
 * Specify what users can do.
 
+Params
+* Check if any extension phone has exist.
+
 Layout JS
 * Add dynamic view to show method.
 
