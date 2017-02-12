@@ -52,3 +52,7 @@ Rails Commands Cheatsheet
 * heroku domains (To view all your domains)
 
 * git push -f heroku master
+
+* mkdir <foldername>
+
+* touch <filename>.md
