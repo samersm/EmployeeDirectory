@@ -55,6 +55,8 @@ Rails Commands Cheatsheet
 
 * heroku domains (To view all your domains)
 
+* heroku rake db:migrate
+
 * git push -f heroku master
 
 * mkdir <foldername>
