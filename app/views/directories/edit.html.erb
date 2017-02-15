@@ -1,6 +1,12 @@
-<h1>Editing Directory</h1>
-
-<%= render 'form', directory: @directory %>
-
-<%= link_to 'Show', @directory %> |
-<%= link_to 'Back', directories_path %>
+<div class="container">
+    <div class="text-center">
+        <h1>Editing Directory</h1>
+    </div>
+    
+    <%= render 'form', directory: @directory %>
+    
+    <div class="text-right">
+        <%= link_to 'Show', @directory, class: 'btn btn-default' %> |
+        <%= link_to 'Back', directories_path, class: 'btn btn-default' %>
+    </div>
+</div>

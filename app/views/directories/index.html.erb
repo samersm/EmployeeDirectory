@@ -1,35 +1,37 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Directories</h1>
-
-<table id="datatable" class="display">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Ext</th>
-      <th>Dept</th>
-      <th>Note</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @directories.each do |directory| %>
+<div class="container">
+  <p id="notice"><%= notice %></p>
+  
+  <h1>Directories</h1>
+  
+  <table id="datatable" class="display">
+    <thead>
       <tr>
-        <td><%= directory.name %></td>
-        <td><%= directory.ext %></td>
-        <td><%= directory.dept %></td>
-        <td><%= directory.note %></td>
-        <td><%= link_to 'Show', directory, class: "btn btn-primary" %></td>
-        <td><%= link_to 'Edit', edit_directory_path(directory), class: "btn btn-warning" %></td>
-        <td><%= link_to 'Destroy', directory, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+        <th>Name</th>
+        <th>Ext</th>
+        <th>Dept</th>
+        <th>Note</th>
+        <th></th>
+        <th></th>
+        <th></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Directory', new_directory_path, class: "btn btn-success" %>
+    </thead>
+  
+    <tbody>
+      <% @directories.each do |directory| %>
+        <tr>
+          <td><%= directory.name %></td>
+          <td><%= directory.ext %></td>
+          <td><%= directory.dept %></td>
+          <td><%= directory.note %></td>
+          <td><%= link_to 'Show', directory, class: "btn btn-primary" %></td>
+          <td><%= link_to 'Edit', edit_directory_path(directory), class: "btn btn-warning" %></td>
+          <td><%= link_to 'Destroy', directory, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  
+  <br>
+  
+  <%= link_to 'New Directory', new_directory_path, class: "btn btn-success" %>
+  </div>

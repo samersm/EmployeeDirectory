@@ -1,37 +1,43 @@
-<%= form_for(directory) do |f| %>
-  <% if directory.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(directory.errors.count, "error") %> prohibited this directory from being saved:</h2>
-
-      <ul>
-      <% directory.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <%= form_for(directory) do |f| %>
+        <% if directory.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(directory.errors.count, "error") %> prohibited this directory from being saved:</h2>
+      
+            <ul>
+            <% directory.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+            </ul>
+          </div>
+        <% end %>
+      
+        <div class="field form-group">
+          <%= f.label :name %>
+          <%= f.text_field :name, class: "form-control" %>
+        </div>
+      
+        <div class="field form-group">
+          <%= f.label :ext %>
+          <%= f.text_field :ext, class: "form-control" %>
+        </div>
+      
+        <div class="field form-group">
+          <%= f.label :dept %>
+          <%= f.text_field :dept, class: "form-control" %>
+        </div>
+      
+        <div class="field form-group">
+          <%= f.label :note %>
+          <%= f.text_area :note, class: "form-control" %>
+        </div>
+      
+        <div class="actions">
+          <%= f.submit "submit", class: "btn btn-primary" %>
+        </div>
       <% end %>
-      </ul>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
   </div>
-
-  <div class="field">
-    <%= f.label :ext %>
-    <%= f.text_field :ext %>
-  </div>
-
-  <div class="field">
-    <%= f.label :dept %>
-    <%= f.text_field :dept %>
-  </div>
-
-  <div class="field">
-    <%= f.label :note %>
-    <%= f.text_field :note %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</div>
