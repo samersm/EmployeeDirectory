@@ -42,6 +42,12 @@ gem 'hirb', '~> 0.7.3'
 # Use Devise for user authentication
 gem 'devise', '~> 4.2'
 
+# Less gem for dynamic style css
+# gem 'less', '~> 2.6'
+
+# Install theme gem allow you to install any html theme
+# gem 'install_theme', '~> 0.8.2'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

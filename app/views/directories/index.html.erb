@@ -2,7 +2,7 @@
 
 <h1>Directories</h1>
 
-<table id="datatable" class="display" cellspacing="0" width="100%">
+<table id="datatable" class="display">
   <thead>
     <tr>
       <th>Name</th>
@@ -22,9 +22,9 @@
         <td><%= directory.ext %></td>
         <td><%= directory.dept %></td>
         <td><%= directory.note %></td>
-        <td><%= link_to 'Show', directory %></td>
-        <td><%= link_to 'Edit', edit_directory_path(directory) %></td>
-        <td><%= link_to 'Destroy', directory, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', directory, class: "btn btn-primary" %></td>
+        <td><%= link_to 'Edit', edit_directory_path(directory), class: "btn btn-warning" %></td>
+        <td><%= link_to 'Destroy', directory, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Directory', new_directory_path %>
+<%= link_to 'New Directory', new_directory_path, class: "btn btn-success" %>

@@ -10,6 +10,10 @@ Rails Commands Cheatsheet
 
 * bundle check
 
+* gem list
+
+* gem uninstall <gem name>
+
 * rails routes
 
 * cd rails-projects/saasapp/

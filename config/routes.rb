@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'theme/index'
+
   root to: 'directories#index'
   resources :directories
   get 'pages/home'
