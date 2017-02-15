@@ -1,24 +1,37 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <p id="notice"><%= notice %></p>
+      <div class="panel panel-info">
+      <div class="panel-heading">Employer Info</div>
+      <div class="panel-body">
+          <p>
+            <strong>Name:</strong>
+            <%= @directory.name %>
+          </p>
+          
+          <p>
+            <strong>Ext:</strong>
+            <%= @directory.ext %>
+          </p>
+          
+          <p>
+            <strong>Dept:</strong>
+            <%= @directory.dept %>
+          </p>
+          
+          <p>
+            <strong>Note:</strong>
+            <%= @directory.note %>
+          </p>
+        </div>
+      </div>
+      
+      <div class="text-center">
+      <%= link_to 'Edit', edit_directory_path(@directory), class: 'btn btn-warning' %> |
+      <%= link_to 'Back', directories_path, class: 'btn btn-primary' %>
+      </div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @directory.name %>
-</p>
-
-<p>
-  <strong>Ext:</strong>
-  <%= @directory.ext %>
-</p>
-
-<p>
-  <strong>Dept:</strong>
-  <%= @directory.dept %>
-</p>
-
-<p>
-  <strong>Note:</strong>
-  <%= @directory.note %>
-</p>
-
-<%= link_to 'Edit', edit_directory_path(@directory) %> |
-<%= link_to 'Back', directories_path %>
+    </div>
+  </div>
+</div>
