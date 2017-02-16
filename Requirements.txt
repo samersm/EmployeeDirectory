@@ -12,6 +12,7 @@ Params
 
 Layout JS
 * Add dynamic view to show method.
+* Make the website Right to Left able.
 
 Application
 * Tranfer the project to mobile application.
